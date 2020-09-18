@@ -1,0 +1,8 @@
+build/
+.DS_Store
+.travis.yml
+bazel-bin
+bazel-graphicsmin
+bazel-out
+bazel-testlogs
+

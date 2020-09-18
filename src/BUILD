@@ -1,0 +1,21 @@
+
+cc_library(
+    name = "christian",
+    srcs = glob([
+        "*.cpp",
+    ]),
+    hdrs = glob([
+        "*.h",
+    ]),
+    copts = ["-O0" , "-g",],
+    deps = ["//ext:glad","//resources:reslib",],
+    linkopts = ["-lglfw","-ldl"],
+    visibility=["//visibility:public"],
+)
+
+cc_binary (
+   name = "eck",
+   copts = ["-O0" , "-g",],
+   deps = [":christian","//resources:reslib",], 
+    visibility=["//visibility:public"],
+)

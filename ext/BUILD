@@ -1,0 +1,13 @@
+
+cc_library(
+    name = "glad",
+    srcs = ["glad/src/glad.c",],
+    hdrs = [ 
+"glad/include/KHR/khrplatform.h",
+"glad/include/glad/glad.h",
+  ],
+   copts = ["-O0" , "-g",],
+  strip_include_prefix = "glad/include",
+    visibility=["//visibility:public"],
+)
+
