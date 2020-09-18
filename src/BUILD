@@ -6,10 +6,6 @@ cc_library(
     hdrs=glob([
         "*.h",
     ]),
-    copts=[
-        "-O0",
-        "-g",
-    ],
     deps=[
         "//ext:glad",
         "//resources:reslib",
@@ -20,10 +16,6 @@ cc_library(
 
 cc_binary(
     name="eck",
-    copts=[
-        "-O0",
-        "-g",
-    ],
     deps=[
         ":christian",
         "//resources:reslib",
